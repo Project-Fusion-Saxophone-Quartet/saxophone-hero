@@ -12,6 +12,16 @@ special thanks to:
 
 ---
 
+## Hardware Requirements
+
+- Digital Audio Interface
+- Computer / Laptop
+- PA or other amplified playback system (plus the needed cables and interconnects to your interface outs)
+- 4 cardioid pattern microphones (plus stands/clips and cables)
+- In-ear monitoring solution, for click track (this transmitter needs interconnects either to the computer's headphone jack or to a separate interface audio channel out)
+- Projector & screen
+- Four tablets for performers' reading music and tracking level progression
+
 ## System Requirements
 
 - **macOS 10.13 or later**
@@ -24,7 +34,7 @@ special thanks to:
 ## Quick Start
 
 1. Unzip the `Saxophone Hero` folder
-2. Double-click **Saxophone Hero.app**
+2. Double-click **Saxophone Hero Game Launcher.app**
 3. Browser windows open automatically
 4. Open the Max patch (`sax-hero-max/sax-hero.maxpat`)
 5. Connect performers and audience via QR codes
@@ -40,7 +50,7 @@ The first time you open the app, macOS may show a security warning because the a
 
 **To bypass:**
 
-1. Right-click (or Control-click) **Saxophone Hero.app**
+1. Right-click (or Control-click) **Saxophone Hero Game Launcher.app**
 2. Select **Open**
 3. Click **Open** in the dialog
 
@@ -174,7 +184,7 @@ Changes take effect immediately on browser reload — no rebuild needed.
 
 ## Network Setup
 
-All devices — host laptop, performers' tablets, audience phones — must be on the **same WiFi network**.
+All devices — host laptop, performers' tablets, audience phones — must be on the **same WiFi network**. In addition, for the game time synchronization to be at its best, the server needs to be able to "see" the NTP server online.
 
 ### ⚠️ Venue WiFi Often Doesn't Work
 
@@ -186,20 +196,23 @@ Use a dedicated wireless router to create a private network for the performance.
 
 > **Bonus:** Configure your router so audience devices can connect without internet access, while the host laptop retains internet for NTP time sync.
 
-### Alternative: iPhone/Android Hotspot
-
-If you don't have a router, use your phone as a hotspot.
+Most routers, however, cannot connect to the Wide Area Network (WAN) wirelessly: they need an wired ethernet connection. If your venue has an Ethernet hookup (rare), then you're all set. Otherwise, the method below will work in most scenarios:
 
 **iPhone:**
 
 1. Enable **Personal Hotspot** on your iPhone
-2. Connect your Mac to the iPhone hotspot via USB (not WiFi)
+2. Connect your Mac to the iPhone hotspot via WiFi
+3. Connect the computer to the WiFi router's WAN port (most MBPs require an Ethernet-to-USB-C dongle)
 3. On Mac: **System Preferences → Sharing → Internet Sharing**
-4. Share connection from: **iPhone USB**
-5. To computers using: **Wi-Fi**
-6. Click the **Wi-Fi Options** button and create a network name and password
+4. Share connection from: **WiFi**
+5. To computers using: **USB 10/100/1000 LAN**
 7. Enable Internet Sharing
-8. All devices connect to this new Mac-hosted WiFi network
+8. All devices connect to the WiFi router's network (we title ours "Saxophone Hero" for clarity)
+
+In this above scenario:
+- The computer will "see" the internet via the iPhone hotspot
+- The router will "see" the game server on the computer and distribute its signaling
+- The game client / audience member will be able to access the game when logged onto the WiFi network, but not the internet (this is good)
 
 **Android:**
 
@@ -211,7 +224,7 @@ Android allows USB tethering with hotspot sharing directly (simpler than iPhone)
 
 ### 1. Launch the App
 
-Double-click **Saxophone Hero.app**.
+Double-click **Saxophone Hero Game Launcher.app**.
 
 The app will:
 
@@ -232,6 +245,20 @@ Leave the app running for the duration of the performance.
 Open: `sax-hero-max/sax-hero.maxpat`
 
 The patch connects to the game server on startup. If the server isn't running yet, the connection will fail.
+
+The Max patch will track the level progression from the game and automatically turn on/off the different levels' respective DSP. With proper routing, the only button you need to touch is the Master Out button, once you are ready. 
+
+Once in the Max patch, you will want to:
+1. Route your audio: 
+- Go to Options --> Audio Status (or find the same area under Preferences), and select the interface through which you are routing audio in and/or out. 
+- Then, route the channels by clicking the Audio I/O Mappings button near the bottom left of the window, which should be just to the left of the loudspeaker icon.
+- Make sure that the four spot mics from the saxophones are properly routed to channels 1, 2, 3, and 4, regardless of your stage configuration. By default, these channels map to Soprano, Alto, Tenor, and Bari, respectively.
+- Route outputs 1 and 2 as L and R to your playback system.
+- Route the computer's audio to a place that you can attach your monitoring system to: the web browser is what will generate a click that should be sent to the performers' ears.
+
+2. Pan the channels according to your stage setup (optional): for a realistic presentation stereo image, use the panning knobs to simulate where your performers are physically located in the L-R field.
+
+3. Turn on the DSP processing: make sure the Master Out button in the Max patch is lit and that the channels are receiving signal.
 
 ### 3. Set Up Performers
 
@@ -305,9 +332,9 @@ If score generation fails repeatedly:
 
 ### Option 1: Quick Restart (App)
 
-1. Quit **Saxophone Hero.app** (Cmd+Q or right-click → Quit)
+1. Quit **Saxophone Hero Game Launcher.app** (Cmd+Q or right-click → Quit)
 2. Close all browser windows
-3. Double-click **Saxophone Hero.app** again
+3. Double-click **Saxophone Hero Game Launcher.app** again
 
 A fresh score generates automatically.
 
@@ -325,7 +352,7 @@ If you launched via Terminal (`npm start`):
 
 ```
 Saxophone-Hero/
-├── Saxophone Hero.app           (macOS launcher)
+├── Saxophone Hero Game Launcher.app           (macOS launcher)
 ├── project/                     (game server & frontend)
 │   ├── index.mjs                (server code)
 │   ├── generate_score.py        (score generator)

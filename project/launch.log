@@ -1,19 +1,19 @@
 === Rhythm Game Launch ===
-Date: Sun Apr 26 20:33:54 EDT 2026
-Project directory: /Users/dougoconnor/Documents/Saxophone Hero/project
-Working directory: /Users/dougoconnor/Documents/Saxophone Hero/project
+Date: Fri Jun 12 23:02:19 EDT 2026
+Project directory: /Users/dougoconnor/Documents/GitHub/saxophone-hero/project
+Working directory: /Users/dougoconnor/Documents/GitHub/saxophone-hero/project
 Python: /opt/homebrew/bin/python3 (Python 3.13.3)
 Generating score...
 
 ── Repeat plan summary ──
-  soprano.json         496.0s  reps: [1, 2, 2, 1, 3, 1, 1, 2, 1, 3, 2, 2, 3, 3, 3, 1]
-  alto.json            528.0s  reps: [2, 2, 1, 2, 1, 1, 3, 3, 3, 2, 3, 2, 3, 2, 2, 1]
-  tenor.json           544.0s  reps: [2, 2, 2, 3, 2, 3, 4, 2, 2, 3, 1, 3, 2, 1, 1, 1]
-  baritone.json        528.0s  reps: [2, 2, 2, 2, 2, 2, 4, 2, 1, 3, 3, 2, 3, 1, 1, 1]
+  soprano.json         480.0s  reps: [2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 3, 2, 1, 2, 3, 1]
+  alto.json            528.0s  reps: [2, 2, 3, 3, 2, 3, 2, 3, 1, 2, 4, 2, 1, 1, 1, 1]
+  tenor.json           512.0s  reps: [1, 1, 1, 3, 1, 2, 3, 3, 1, 3, 2, 1, 3, 2, 2, 3]
+  baritone.json        512.0s  reps: [1, 1, 1, 1, 2, 2, 2, 2, 3, 1, 3, 3, 3, 3, 1, 3]
 
   Peak spread         : 4 levels  (intended ≤3, hard limit 3)
-  Level 17 sync beat  : 1124  (562.0s / 9.37 min)
-  Longest voice       : 544.0s
+  Level 17 sync beat  : 1092  (546.0s / 9.10 min)
+  Longest voice       : 528.0s
 
 Generated: public/tap_sequences/generated/soprano.json
 Generated: public/tap_sequences/generated/alto.json
@@ -25,12 +25,12 @@ Waiting for server...
 OSC ready → sending to 127.0.0.1:9000
 
 ── Repeat plan summary ──
-  soprano.json         512.0s  reps: [1, 2, 2, 2, 2, 2, 1, 1, 3, 1, 3, 3, 1, 4, 1, 3]
-  alto.json            528.0s  reps: [2, 2, 2, 2, 2, 3, 3, 2, 1, 4, 2, 2, 3, 1, 1, 1]
-  tenor.json           512.0s  reps: [2, 2, 1, 1, 3, 1, 3, 1, 3, 2, 2, 4, 1, 2, 3, 1]
-  baritone.json        528.0s  reps: [2, 1, 1, 1, 2, 3, 2, 3, 3, 4, 1, 2, 3, 3, 1, 1]
+  soprano.json         528.0s  reps: [1, 2, 2, 2, 1, 2, 3, 2, 1, 1, 3, 1, 3, 3, 2, 4]
+  alto.json            528.0s  reps: [2, 2, 1, 1, 1, 2, 2, 2, 3, 2, 3, 3, 3, 4, 1, 1]
+  tenor.json           512.0s  reps: [2, 2, 2, 3, 3, 2, 2, 3, 1, 2, 1, 2, 1, 1, 4, 1]
+  baritone.json        528.0s  reps: [2, 2, 2, 3, 2, 2, 3, 3, 4, 3, 2, 1, 1, 1, 1, 1]
 
-  Peak spread         : 3 levels  (intended ≤3, hard limit 3)
+  Peak spread         : 4 levels  (intended ≤3, hard limit 3)
   Level 17 sync beat  : 1092  (546.0s / 9.10 min)
   Longest voice       : 528.0s
 
@@ -38,35 +38,146 @@ Generated: public/tap_sequences/generated/soprano.json
 Generated: public/tap_sequences/generated/alto.json
 Generated: public/tap_sequences/generated/tenor.json
 Generated: public/tap_sequences/generated/baritone.json
-Score generation attempt 1: peak spread = 3
-✓ Target spread of 3 achieved after 1 attempt
-NTP sync: offset=13.28 ms (slewing from 0.00 ms, delta=13.28 ms)
+Score generation attempt 1: peak spread = 4
+  Spread 4 ≠ 3 — regenerating…
+
+── Repeat plan summary ──
+  soprano.json         512.0s  reps: [1, 2, 1, 2, 1, 1, 1, 2, 2, 3, 3, 4, 2, 1, 3, 3]
+  alto.json            528.0s  reps: [2, 3, 1, 2, 2, 2, 3, 2, 2, 2, 2, 3, 1, 1, 1, 4]
+  tenor.json           528.0s  reps: [2, 1, 2, 1, 2, 3, 3, 2, 2, 2, 3, 1, 3, 4, 1, 1]
+  baritone.json        528.0s  reps: [2, 2, 2, 2, 2, 3, 3, 3, 3, 1, 4, 1, 2, 1, 1, 1]
+
+  Peak spread         : 4 levels  (intended ≤3, hard limit 3)
+  Level 17 sync beat  : 1092  (546.0s / 9.10 min)
+  Longest voice       : 528.0s
+
+Generated: public/tap_sequences/generated/soprano.json
+Generated: public/tap_sequences/generated/alto.json
+Generated: public/tap_sequences/generated/tenor.json
+Generated: public/tap_sequences/generated/baritone.json
+Score generation attempt 2: peak spread = 4
+  Spread 4 ≠ 3 — regenerating…
+
+── Repeat plan summary ──
+  soprano.json         512.0s  reps: [2, 2, 2, 1, 2, 3, 1, 3, 3, 1, 2, 1, 3, 1, 3, 2]
+  alto.json            512.0s  reps: [1, 1, 2, 1, 2, 3, 3, 3, 1, 1, 3, 3, 1, 4, 2, 1]
+  tenor.json           512.0s  reps: [2, 1, 2, 2, 1, 2, 1, 3, 3, 1, 4, 3, 2, 1, 2, 2]
+  baritone.json        512.0s  reps: [2, 2, 2, 1, 3, 1, 2, 1, 1, 3, 3, 4, 1, 3, 1, 2]
+
+  Peak spread         : 2 levels  (intended ≤3, hard limit 3)
+  Level 17 sync beat  : 1060  (530.0s / 8.83 min)
+  Longest voice       : 512.0s
+
+Generated: public/tap_sequences/generated/soprano.json
+Generated: public/tap_sequences/generated/alto.json
+Generated: public/tap_sequences/generated/tenor.json
+Generated: public/tap_sequences/generated/baritone.json
+Score generation attempt 3: peak spread = 2
+  Spread 2 ≠ 3 — regenerating…
+
+── Repeat plan summary ──
+  soprano.json         496.0s  reps: [1, 1, 1, 1, 1, 2, 1, 3, 3, 3, 3, 4, 3, 2, 1, 1]
+  alto.json            512.0s  reps: [3, 1, 2, 1, 2, 3, 2, 2, 1, 3, 3, 1, 1, 2, 1, 4]
+  tenor.json           528.0s  reps: [2, 2, 2, 2, 3, 2, 2, 3, 3, 1, 2, 1, 3, 3, 1, 1]
+  baritone.json        512.0s  reps: [3, 2, 3, 2, 2, 3, 3, 1, 3, 2, 2, 1, 2, 1, 1, 1]
+
+  Peak spread         : 4 levels  (intended ≤3, hard limit 3)
+  Level 17 sync beat  : 1092  (546.0s / 9.10 min)
+  Longest voice       : 528.0s
+
+Generated: public/tap_sequences/generated/soprano.json
+Generated: public/tap_sequences/generated/alto.json
+Generated: public/tap_sequences/generated/tenor.json
+Generated: public/tap_sequences/generated/baritone.json
+Score generation attempt 4: peak spread = 4
+  Spread 4 ≠ 3 — regenerating…
+
+── Repeat plan summary ──
+  soprano.json         512.0s  reps: [2, 1, 1, 1, 2, 1, 3, 3, 3, 3, 3, 1, 1, 3, 2, 2]
+  alto.json            528.0s  reps: [2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 3, 3, 3, 4, 1, 1]
+  tenor.json           560.0s  reps: [2, 2, 2, 2, 2, 2, 3, 1, 3, 3, 3, 3, 1, 1, 4, 1]
+  baritone.json        528.0s  reps: [1, 1, 1, 1, 2, 2, 2, 3, 2, 3, 1, 3, 4, 3, 3, 1]
+
+  Peak spread         : 2 levels  (intended ≤3, hard limit 3)
+  Level 17 sync beat  : 1156  (578.0s / 9.63 min)
+  Longest voice       : 560.0s
+
+Generated: public/tap_sequences/generated/soprano.json
+Generated: public/tap_sequences/generated/alto.json
+Generated: public/tap_sequences/generated/tenor.json
+Generated: public/tap_sequences/generated/baritone.json
+Score generation attempt 5: peak spread = 2
+  Spread 2 ≠ 3 — regenerating…
+
+── Repeat plan summary ──
+  soprano.json         496.0s  reps: [3, 2, 2, 2, 1, 2, 2, 1, 1, 1, 3, 2, 3, 4, 1, 1]
+  alto.json            528.0s  reps: [1, 1, 1, 1, 2, 2, 2, 3, 3, 2, 2, 1, 2, 3, 3, 4]
+  tenor.json           512.0s  reps: [2, 1, 1, 2, 2, 2, 2, 4, 3, 3, 3, 2, 1, 1, 2, 1]
+  baritone.json        560.0s  reps: [2, 4, 3, 2, 2, 1, 2, 3, 2, 3, 2, 3, 3, 1, 1, 1]
+
+  Peak spread         : 4 levels  (intended ≤3, hard limit 3)
+  Level 17 sync beat  : 1156  (578.0s / 9.63 min)
+  Longest voice       : 560.0s
+
+Generated: public/tap_sequences/generated/soprano.json
+Generated: public/tap_sequences/generated/alto.json
+Generated: public/tap_sequences/generated/tenor.json
+Generated: public/tap_sequences/generated/baritone.json
+Score generation attempt 6: peak spread = 4
+  Spread 4 ≠ 3 — regenerating…
+
+── Repeat plan summary ──
+  soprano.json         512.0s  reps: [1, 2, 2, 1, 1, 2, 3, 1, 3, 3, 1, 1, 1, 4, 3, 3]
+  alto.json            544.0s  reps: [2, 2, 2, 3, 2, 3, 2, 2, 3, 2, 2, 3, 1, 3, 1, 1]
+  tenor.json           512.0s  reps: [2, 2, 1, 1, 2, 2, 2, 2, 1, 3, 3, 3, 3, 3, 1, 1]
+  baritone.json        496.0s  reps: [2, 3, 3, 3, 1, 2, 3, 4, 1, 1, 1, 1, 3, 1, 1, 1]
+
+  Peak spread         : 4 levels  (intended ≤3, hard limit 3)
+  Level 17 sync beat  : 1124  (562.0s / 9.37 min)
+  Longest voice       : 544.0s
+
+Generated: public/tap_sequences/generated/soprano.json
+Generated: public/tap_sequences/generated/alto.json
+Generated: public/tap_sequences/generated/tenor.json
+Generated: public/tap_sequences/generated/baritone.json
+Score generation attempt 7: peak spread = 4
+  Spread 4 ≠ 3 — regenerating…
+
+── Repeat plan summary ──
+  soprano.json         528.0s  reps: [1, 2, 2, 1, 1, 2, 1, 2, 3, 2, 1, 3, 3, 4, 3, 2]
+  alto.json            544.0s  reps: [2, 2, 2, 2, 3, 2, 3, 2, 1, 3, 4, 1, 3, 2, 1, 1]
+  tenor.json           544.0s  reps: [2, 2, 2, 1, 1, 1, 2, 3, 4, 3, 2, 3, 3, 3, 1, 1]
+  baritone.json        576.0s  reps: [2, 2, 3, 2, 3, 2, 1, 3, 2, 2, 3, 4, 2, 3, 1, 1]
+
+  Peak spread         : 3 levels  (intended ≤3, hard limit 3)
+  Level 17 sync beat  : 1188  (594.0s / 9.90 min)
+  Longest voice       : 576.0s
+
+Generated: public/tap_sequences/generated/soprano.json
+Generated: public/tap_sequences/generated/alto.json
+Generated: public/tap_sequences/generated/tenor.json
+Generated: public/tap_sequences/generated/baritone.json
+Score generation attempt 8: peak spread = 3
+✓ Target spread of 3 achieved after 8 attempts
+NTP sync: offset=156.56 ms (slewing from 0.00 ms, delta=156.56 ms)
 Ensemble config loaded: baritone / tenor / alto / soprano
 Server listening on port 8080
-Frontend served from /Users/dougoconnor/Documents/Saxophone Hero/project/dist
-→ http://192.168.50.253:8080
+Frontend served from /Users/dougoconnor/Documents/GitHub/saxophone-hero/project/dist
+→ http://192.168.50.250:8080
+→ http://192.168.50.88:8080
 
-── GAME (audience)    → http://192.168.50.253:8080/game
-── PERFORMER PAGE     → http://192.168.50.253:8080/performer
-── PROJECTION         → http://192.168.50.253:8080/projection
+── GAME (audience)    → http://192.168.50.250:8080/game
+── PERFORMER PAGE     → http://192.168.50.250:8080/performer
+── PROJECTION         → http://192.168.50.250:8080/projection
 
 Opening browser windows…
 [ws] client connected: socket-1 (total: 1)
+[ws] socket-1 identified as: host
 [ws] client connected: socket-2 (total: 2)
-[ws] socket-2 identified as: host
 Server ready!
-Launched successfully. PID: 62703
+Launched successfully. PID: 21822
 [ws] client connected: socket-3 (total: 3)
 [ws] socket-3 identified as: host
 [ws] client disconnected: socket-3 code=1001 (remaining: 2)
 [ws] client disconnected: socket-2 code=1001 (remaining: 1)
 [ws] client disconnected: socket-1 code=1001 (remaining: 0)
-NTP sync: offset=6.69 ms (slewing from 13.28 ms, delta=6.60 ms)
-NTP sync: offset=10.18 ms (applied immediately)
-Error: ENOENT: no such file or directory, stat '/Users/dougoconnor/Documents/Saxophone Hero/project/dist/index.html'
-Error: ENOENT: no such file or directory, stat '/Users/dougoconnor/Documents/Saxophone Hero/project/dist/index.html'
-NTP sync: offset=9.69 ms (applied immediately)
-NTP sync: offset=7.93 ms (applied immediately)
-NTP sync: offset=25.66 ms (slewing from 7.93 ms, delta=17.73 ms)
-NTP sync: offset=12.34 ms (slewing from 25.66 ms, delta=13.32 ms)
-NTP sync: offset=61.38 ms (slewing from 12.34 ms, delta=49.03 ms)

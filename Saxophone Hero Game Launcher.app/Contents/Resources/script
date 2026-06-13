@@ -8,6 +8,12 @@ APP_BUNDLE="$(dirname "$APP_CONTENTS")"            # .../App.app
 SAXOPHONE_HERO_DIR="$(dirname "$APP_BUNDLE")"      # .../Saxophone Hero
 PROJECT_DIR="$SAXOPHONE_HERO_DIR/project"
 
+# Detect App Translocation and abort with a clear message
+if [[ "$APP_BUNDLE" == *"AppTranslocation"* ]]; then
+    osascript -e 'display dialog "This app cannot run from its current location.\n\nPlease move '\''Saxophone Hero Game Launcher.app'\'' to your Desktop or project folder, then try again.\n\nOr run in Terminal:\n  xattr -dr com.apple.quarantine '\''/path/to/Saxophone Hero Game Launcher.app'\''" buttons {"OK"} with icon stop'
+    exit 1
+fi
+
 # Debug - will write to log
 echo "=== Path Debug ==="
 echo "SCRIPT_PATH: $SCRIPT_PATH"
