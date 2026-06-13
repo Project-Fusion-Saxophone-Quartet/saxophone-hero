@@ -1,0 +1,104 @@
+{
+	"pattrstorage" : 	{
+		"name" : "1242_saxophone-hero",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"Output" : [ 0.0 ],
+					"chorus-level" : [ 0 ],
+					"drywet" : [ 0.0 ],
+					"flanger-level" : [ 0 ],
+					"flangerbw" : [ 0.1 ],
+					"flangercenter" : [ 0.0 ],
+					"flangerfb" : [ 0.0 ],
+					"flangerrate" : [ 0.1 ],
+					"inputgain" : [ 126 ],
+					"interval" : [ "u" ],
+					"pan" : [ 0.999999999999998 ],
+					"pitch-level" : [ 0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"Output" : [ -10.921290616031509 ],
+					"chorus-level" : [ 125 ],
+					"drywet" : [ 1.0 ],
+					"flanger-level" : [ 0 ],
+					"flangerbw" : [ 0.1 ],
+					"flangercenter" : [ 0.0 ],
+					"flangerfb" : [ 0.0 ],
+					"flangerrate" : [ 0.1 ],
+					"inputgain" : [ 130 ],
+					"interval" : [ "8va" ],
+					"pan" : [ 1.0 ],
+					"pitch-level" : [ 124 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"Output" : [ 0.0 ],
+					"chorus-level" : [ 2 ],
+					"drywet" : [ 1.0 ],
+					"flanger-level" : [ 121 ],
+					"flangerbw" : [ 106.0 ],
+					"flangercenter" : [ 199.0 ],
+					"flangerfb" : [ 0.8 ],
+					"flangerrate" : [ 0.5 ],
+					"inputgain" : [ 126 ],
+					"interval" : [ "8va" ],
+					"pan" : [ 1.0 ],
+					"pitch-level" : [ 116 ]
+				}
+
+			}
+,
+			"4" : 			{
+				"id" : 4,
+				"data" : 				{
+					"Output" : [ 0.0 ],
+					"chorus-level" : [ 2 ],
+					"drywet" : [ 1.0 ],
+					"flanger-level" : [ 137 ],
+					"flangerbw" : [ 106.0 ],
+					"flangercenter" : [ 199.0 ],
+					"flangerfb" : [ 0.8 ],
+					"flangerrate" : [ 0.5 ],
+					"inputgain" : [ 126 ],
+					"interval" : [ "M7" ],
+					"pan" : [ 1.0 ],
+					"pitch-level" : [ 121 ]
+				}
+
+			}
+,
+			"5" : 			{
+				"id" : 5,
+				"data" : 				{
+					"Output" : [ 0.0 ],
+					"chorus-level" : [ 2 ],
+					"drywet" : [ 0.0 ],
+					"flanger-level" : [ 0 ],
+					"flangerbw" : [ 0.1 ],
+					"flangercenter" : [ 0.0 ],
+					"flangerfb" : [ 0.0 ],
+					"flangerrate" : [ 0.1 ],
+					"inputgain" : [ 0 ],
+					"interval" : [ "M7" ],
+					"pan" : [ 0.0 ],
+					"pitch-level" : [ 0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

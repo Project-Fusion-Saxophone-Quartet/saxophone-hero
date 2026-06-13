@@ -1,0 +1,15 @@
+{
+  "voiceOrder": ["baritone", "tenor", "alto", "soprano"],
+  "voiceNames": {
+    "soprano":  "Soprano",
+    "alto":     "Alto",
+    "tenor":    "Tenor",
+    "baritone": "Baritone"
+  },
+  "voiceColors": {
+    "soprano":  "#a855f7",
+    "alto":     "#f7b731",
+    "tenor":    "#3b82f6",
+    "baritone": "#22c55e"
+  }
+}

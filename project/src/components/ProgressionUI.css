@@ -1,0 +1,23 @@
+.progression-ui {
+  width: 100%;
+  height: 100dvh;
+  background: #0a0a0f;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.progression-ui canvas {
+  display: block;
+  width: 100%;
+  flex: 1;
+  background: #0a0a0f;
+}
+
+.scores {
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.04em;
+}
